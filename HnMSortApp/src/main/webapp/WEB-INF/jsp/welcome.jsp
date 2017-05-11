@@ -14,29 +14,24 @@
 <body>
 
 	<div class="container">
-
 		<div class="row">
-
 			<h3>H&M Sorting Application</h3>
-
 			<hr />
-
 			<div ng-app="angularjs-starter" ng-controller="MainCtrl">
 				<fieldset data-ng-repeat="number in numbers">
-					<input type="text" ng-model="number.value" name=""
-						placeholder="Enter Number" size="10">
+					<input type="number" ng-model="number.value" name=""
+						placeholder="Enter Number" size="10" min="0" max="10000000"
+						required>
 					<button class="remove" ng-show="$last" ng-click="removeNumber()">-</button>
 				</fieldset>
 				<button class="addfields" ng-click="addNewNumber()">Add
 					Number</button>
 				<button class="addfields" ng-click="getSorted()">Sort
 					Numbers</button>
+				<button class="addfields" ng-click="getHistorySorts()">Sort
+					History</button>
 
-				<button class="addfields" ng-click="getHistorySorts()">Sort History</button>
-
-				<!-- <div id="numberDisplay">{{ numbers }}</div> -->
-				<br>
-				<br>
+				<br> <br>
 				<div id="divSortOutput">
 					<h4>Sort Output</h4>
 					<table>
@@ -56,8 +51,7 @@
 						</tbody>
 					</table>
 				</div>
-				<br>
-				<br>
+				<br> <br>
 				<div id="divPreviousSortResults">
 					<h4>History Of your Sorts</h4>
 					<table>
@@ -89,12 +83,12 @@
 
 	<div class="footer">
 		<div class="container">
-			<p class="row text-muted">Client Side validations are not added, so only numerics are expected</p>
-			<p class="row text-muted">You Can add multiple numbers by clicking on the Add Number Button</p>
+			<p class="row text-muted">You Can add multiple numbers by
+				clicking on the Add Number Button</p>
 			<p class="row text-muted">Hit Sort Numbers to sort the number</p>
-			<p class="row text-muted">Hit Sort History Button to get Sort  History</p>
+			<p class="row text-muted">Hit Sort History Button to get Sort
+				History</p>
 		</div>
 	</div>
-
 </body>
 </html>
