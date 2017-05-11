@@ -33,7 +33,6 @@ var app = angular.module('HMSortApp', []);
       response.error(function(data, status, headers, config) {
           alert("Please check your Data");
       });
-	  
   };
   
   
@@ -46,5 +45,4 @@ var app = angular.module('HMSortApp', []);
 	            $scope.sortDataInfoList = respose.data;
 	    });
   };
-  
 });
