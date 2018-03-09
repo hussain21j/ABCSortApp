@@ -1,14 +1,9 @@
 
 This is Sorting Application
 
-User Story : As given in the mail<br>
+User Story : Sample project<br>
 <br>
-Problem Statement Understanding : <br>
- -Need a web based application to sort numbers<br>
- -User Should be able to enter any numbers and sort the numbers <br>
- -User should see the response of sorted number, time taken and movement count of numbers<br>
- -User should be able to see the previous histroy of its sorts done<br>
-<br>
+
 Technologies and tools Used:<br>
  -Spring Boot<br>
  -Spring MVC, REST<br>
